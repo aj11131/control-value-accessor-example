@@ -1,0 +1,6 @@
+<div class="container">
+  <mat-icon *ngFor="let star of starArr;" class="icon" (click)="highlightStars(star)">
+    {{highlightedStars | highlightStar: [star]}}
+  </mat-icon>
+</div>
+

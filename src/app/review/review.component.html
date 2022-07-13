@@ -1,0 +1,16 @@
+<mat-card class="review-card">
+  <form [formGroup]="reviewForm" (submit)="onSubmit()">
+    <mat-form-field appearance="outline" class="review-box">
+      <mat-label>Review</mat-label>
+      <textarea
+        formControlName="review"
+        matInput
+        placeholder="Please describe your experience"
+      ></textarea>
+    </mat-form-field>
+    <app-star-selection formControlName="stars"></app-star-selection>
+    <button [disabled]="reviewForm.invalid" class="submit-button" mat-raised-button color="primary">
+      Submit
+    </button>
+  </form>
+</mat-card>

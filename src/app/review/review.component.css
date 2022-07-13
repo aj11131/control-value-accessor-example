@@ -1,0 +1,13 @@
+.review-card {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.review-box {
+  width: 100%;
+}
+
+.submit-button {
+  display: block;
+  margin: 1rem auto;
+}
